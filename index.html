@@ -7,13 +7,12 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">AK</div>
             <ul class="nav-menu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -34,17 +33,23 @@
     <section id="about" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Hi, I'm <span class="highlight">Ayush Kiran</span></h1>
-                <p class="hero-subtitle">Computer Science & Data Science Student at UW Madison</p>
+                <div class="hero-greeting">Hello, I'm</div>
+                <h1 class="hero-title">Ayush Kiran</h1>
+                <p class="hero-subtitle">Computer Science & Data Science Student</p>
+                <p class="hero-location">University of Wisconsin - Madison</p>
                 <p class="hero-description">
-                    I'm passionate about building intelligent systems that combine AI, computer vision, and full-stack development. 
-                    Currently pursuing my Bachelor's degree while working on projects that solve real-world problems through innovative 
-                    technology solutions. I love diving deep into machine learning, creating seamless user experiences, and turning 
+                    Building intelligent systems that combine AI, computer vision, and full-stack development. 
+                    Passionate about solving real-world problems through innovative technology and turning 
                     complex ideas into practical applications.
                 </p>
                 <div class="hero-links">
-                    <a href="https://github.com/ayush10kiran" target="_blank" class="btn btn-primary">GitHub</a>
-                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                    <a href="https://github.com/ayush10kiran" target="_blank" class="btn btn-primary">
+                        <span>GitHub</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">Contact</a>
                 </div>
             </div>
         </div>
