@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Kiran - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">AK</div>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#leadership">Leadership</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Ayush Kiran</span></h1>
+                <p class="hero-subtitle">Computer Science & Data Science Student at UW Madison</p>
+                <p class="hero-description">
+                    I'm passionate about building intelligent systems that combine AI, computer vision, and full-stack development. 
+                    Currently pursuing my Bachelor's degree while working on projects that solve real-world problems through innovative 
+                    technology solutions. I love diving deep into machine learning, creating seamless user experiences, and turning 
+                    complex ideas into practical applications.
+                </p>
+                <div class="hero-links">
+                    <a href="https://github.com/ayush10kiran" target="_blank" class="btn btn-primary">GitHub</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">Software Engineering Intern</h3>
+                        <p class="experience-company">8chili Inc.</p>
+                    </div>
+                    <span class="experience-date">June 2025 – August 2025</span>
+                </div>
+                <p class="experience-location">Remote – San Francisco, CA</p>
+                
+                <div class="experience-details">
+                    <h4>Overview</h4>
+                    <p>
+                        Worked as a Software Engineering Intern at 8chili Inc., a company specializing in VR training and simulation 
+                        applications. My primary focus was on integrating AI-driven conversational agents into immersive VR experiences, 
+                        enabling natural language interaction within virtual training environments.
+                    </p>
+
+                    <h4>Key Contributions</h4>
+                    <ul>
+                        <li>
+                            <strong>AI Agent Integration:</strong> Architected and implemented an AI-driven conversational agent system 
+                            that seamlessly integrated with Unity-based VR applications. This involved designing the overall system 
+                            architecture in collaboration with senior engineers, ensuring scalability and maintainability. The agent 
+                            was built using a combination of Unity (C#) for the frontend integration and Python-based backend services 
+                            for AI processing.
+                        </li>
+                        <li>
+                            <strong>NLP & Dialogue Systems:</strong> Designed and implemented sophisticated dialogue flows that enabled 
+                            context-aware, multi-turn conversations within VR environments. Developed intent classification systems to 
+                            understand user queries and map them to appropriate responses. Created state-based conversation logic that 
+                            maintained context across interactions, allowing for natural, flowing conversations that adapt to user input 
+                            and simulation state changes.
+                        </li>
+                        <li>
+                            <strong>LLM Integration & Middleware:</strong> Leveraged Large Language Model (LLM) APIs to power the 
+                            conversational capabilities, building custom middleware layers to handle API calls, response processing, 
+                            and error handling. This middleware ensured reliable communication between the Unity frontend and external 
+                            AI services while managing rate limiting, caching, and response formatting.
+                        </li>
+                        <li>
+                            <strong>Event-Driven Architecture:</strong> Implemented event-driven, context-aware AI behaviors using 
+                            Unity's event system and FastAPI-based backend APIs. The system dynamically responded to user input, 
+                            simulation state changes, and environmental triggers, creating a responsive and immersive experience. 
+                            This architecture allowed for real-time updates and seamless interaction between the VR environment and 
+                            the AI agent.
+                        </li>
+                        <li>
+                            <strong>Performance Optimization:</strong> Conducted extensive integration testing, debugging, and 
+                            performance profiling using Unity Profiler and in-engine diagnostics. Identified and resolved bottlenecks 
+                            to ensure low-latency responses critical for VR applications, where even small delays can break immersion. 
+                            Optimized API calls, reduced memory allocations, and fine-tuned the conversation system to maintain stable 
+                            frame rates and responsive interactions.
+                        </li>
+                    </ul>
+
+                    <h4>Technologies Used</h4>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Unity</span>
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">LLM APIs</span>
+                        <span class="tech-tag">NLP</span>
+                        <span class="tech-tag">Event-Driven Architecture</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            
+            <div class="project-grid">
+                <!-- Project 1: Postura -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Postura</h3>
+                        <span class="project-date">August 2025</span>
+                    </div>
+                    <p class="project-type">Full-Stack + Machine Learning</p>
+                    
+                    <div class="project-content">
+                        <h4>Project Overview</h4>
+                        <p>
+                            Postura is a real-time posture correction application that uses computer vision and machine learning to 
+                            help users improve their exercise form and prevent injuries. The app provides instant feedback during 
+                            workouts, making it accessible for users of all fitness levels to perform exercises correctly.
+                        </p>
+
+                        <h4>Key Features & Implementation</h4>
+                        <ul>
+                            <li>
+                                <strong>Real-Time Pose Detection:</strong> Implemented MediaPipe pose estimation to track 33 keypoints 
+                                on the human body in real-time. This provides a comprehensive skeletal representation that captures 
+                                body position, joint angles, and movement patterns. The system processes video frames at high frame 
+                                rates to ensure smooth, responsive feedback.
+                            </li>
+                            <li>
+                                <strong>Custom ML Models:</strong> Developed and trained custom machine learning models to analyze 
+                                exercise form and detect deviations from proper technique. These models were trained on labeled datasets 
+                                of correct and incorrect exercise forms, learning to identify subtle errors that could lead to injury 
+                                or reduced effectiveness. The models achieved a 25% reduction in form errors during pilot testing with 
+                                real users.
+                            </li>
+                            <li>
+                                <strong>Exercise Library:</strong> Built a comprehensive exercise library featuring 10+ different 
+                                movements, each with its own form analysis criteria. The library includes exercises like squats, 
+                                push-ups, planks, and more, with specific biomechanical rules for each movement type. Each exercise 
+                                has customized feedback mechanisms tailored to common mistakes.
+                            </li>
+                            <li>
+                                <strong>Rep Counting & Scoring:</strong> Implemented intelligent rep counting algorithms that 
+                                accurately track exercise repetitions by analyzing movement patterns and keypoint trajectories. 
+                                The scoring system evaluates each rep based on form quality, providing users with detailed feedback 
+                                on their performance. This helps users understand not just how many reps they did, but how well 
+                                they performed them.
+                            </li>
+                            <li>
+                                <strong>Multi-Modal Feedback:</strong> Designed instant audio and visual feedback systems to guide 
+                                users in real-time. Visual feedback includes on-screen overlays showing correct form, highlighting 
+                                areas that need adjustment, and displaying real-time scores. Audio cues provide verbal guidance 
+                                without requiring users to look at the screen, enhancing usability during workouts.
+                            </li>
+                            <li>
+                                <strong>Cross-Platform Development:</strong> Built and tested prototypes across multiple platforms 
+                                to ensure broad accessibility. Created a Streamlit + FastAPI web application for browser-based access, 
+                                allowing users to start immediately without installation. Developed an iOS SwiftUI app for mobile users, 
+                                providing a native experience optimized for iPhone cameras and performance.
+                            </li>
+                            <li>
+                                <strong>User Testing & Validation:</strong> Conducted extensive testing with 20+ users to validate 
+                                accuracy and usability. Collected feedback on interface design, feedback clarity, and overall user 
+                                experience. Iteratively improved the application based on user input, focusing on making the technology 
+                                accessible to users with varying technical backgrounds.
+                            </li>
+                        </ul>
+
+                        <h4>Technical Challenges</h4>
+                        <p>
+                            One of the main challenges was ensuring real-time performance while maintaining accuracy. Processing video 
+                            frames, running pose estimation, and executing ML model inference all needed to happen quickly enough to 
+                            provide immediate feedback. This required careful optimization of the pipeline, including frame skipping 
+                            strategies, model quantization, and efficient data structures.
+                        </p>
+
+                        <h4>Technologies Used</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">MediaPipe</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">Swift</span>
+                            <span class="tech-tag">SwiftUI</span>
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Squash Pose Tracker -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Squash Pose Tracker Web App</h3>
+                        <span class="project-date">June 2025</span>
+                    </div>
+                    <p class="project-type">Full-Stack + Machine Learning</p>
+                    
+                    <div class="project-content">
+                        <h4>Project Overview</h4>
+                        <p>
+                            A specialized computer vision web application designed to analyze squash performance through video analysis. 
+                            The app helps players understand their technique, identify areas for improvement, and track performance 
+                            metrics over time. This project combines my passion for squash with my technical skills in computer vision 
+                            and data analysis.
+                        </p>
+
+                        <h4>Key Features & Implementation</h4>
+                        <ul>
+                            <li>
+                                <strong>Video Processing Pipeline:</strong> Built a comprehensive video processing system using OpenCV 
+                                and MediaPipe that analyzes squash match footage frame-by-frame. The system extracts pose keypoints 
+                                from each frame, tracking player movement throughout the entire video. This allows for detailed analysis 
+                                of technique, positioning, and movement patterns that are crucial in squash.
+                            </li>
+                            <li>
+                                <strong>Pose Keypoint Tracking:</strong> Implemented robust pose estimation that tracks all major body 
+                                joints throughout the video. The system maintains tracking even during fast movements, occlusions, and 
+                                rapid direction changes that are common in squash. This provides a complete picture of player movement 
+                                and body positioning during rallies.
+                            </li>
+                            <li>
+                                <strong>Motion Analysis:</strong> Developed algorithms to analyze movement patterns, including swing 
+                                mechanics, footwork, and court positioning. The system identifies key movement phases such as preparation, 
+                                execution, and follow-through for different shot types. This analysis helps players understand the 
+                                biomechanics of their technique.
+                            </li>
+                            <li>
+                                <strong>Impact Detection:</strong> Created specialized algorithms to detect racket-ball impact moments 
+                                with high precision. This involves analyzing keypoint trajectories, velocity changes, and spatial 
+                                relationships between the player's body, racket, and ball. Accurate impact detection is crucial for 
+                                analyzing shot timing and technique.
+                            </li>
+                            <li>
+                                <strong>Rule-Based Scoring System:</strong> Designed a sophisticated scoring system that evaluates 
+                                technique based on biomechanical pose features. The system analyzes factors such as racket angle, 
+                                body rotation, weight transfer, and follow-through. The scoring incorporates tolerance for natural 
+                                human variation, recognizing that perfect form may vary slightly between players while still identifying 
+                                significant technical errors.
+                            </li>
+                            <li>
+                                <strong>Feature Extraction:</strong> Used NumPy and Pandas to extract and process structured features 
+                                from pose data. This includes calculating angles, velocities, accelerations, and spatial relationships 
+                                that are relevant to squash performance. The feature extraction pipeline transforms raw keypoint data 
+                                into meaningful performance metrics.
+                            </li>
+                            <li>
+                                <strong>Data Export & Analysis:</strong> Implemented CSV export functionality that allows users to 
+                                export structured performance data for further analysis. The exported data includes frame-by-frame 
+                                keypoint positions, calculated metrics, and performance scores. This enables users to perform their 
+                                own analysis or track performance trends over time.
+                            </li>
+                        </ul>
+
+                        <h4>Technical Challenges</h4>
+                        <p>
+                            Processing video frame-by-frame while maintaining accuracy required careful optimization. The system needed 
+                            to handle videos of varying lengths and qualities, and maintain pose tracking accuracy even during fast 
+                            movements. The rule-based scoring system needed to balance strictness with tolerance for natural variation, 
+                            requiring extensive testing and refinement.
+                        </p>
+
+                        <h4>Technologies Used</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">MediaPipe</span>
+                            <span class="tech-tag">NumPy</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">Video Processing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Campus Path Finder -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Campus Path Finder</h3>
+                        <span class="project-date">April – May 2025</span>
+                    </div>
+                    <p class="project-type">Desktop Application</p>
+                    
+                    <div class="project-content">
+                        <h4>Project Overview</h4>
+                        <p>
+                            A desktop application that helps students and visitors navigate the University of Wisconsin-Madison campus 
+                            by finding the shortest path between any two locations. The app provides an intuitive interface for 
+                            exploring campus and planning routes, making it easier to navigate the large university campus.
+                        </p>
+
+                        <h4>Key Features & Implementation</h4>
+                        <ul>
+                            <li>
+                                <strong>Graph-Based Navigation:</strong> Implemented a comprehensive graph data structure representing 
+                                the campus with 50+ locations as nodes and pathways as edges. Each location includes metadata such as 
+                                building names, coordinates, and accessibility information. The graph accurately represents the physical 
+                                layout of the campus, including walking paths, shortcuts, and building connections.
+                            </li>
+                            <li>
+                                <strong>Dijkstra's Algorithm:</strong> Implemented Dijkstra's shortest path algorithm to find optimal 
+                                routes between any two campus locations. The algorithm efficiently computes paths with sub-second 
+                                response times, even when searching across the entire campus graph. This ensures a smooth, responsive 
+                                user experience.
+                            </li>
+                            <li>
+                                <strong>Modular UI Architecture:</strong> Designed a clean, modular user interface using JavaFX with 
+                                three main components:
+                                <ul>
+                                    <li><strong>GraphCanvas:</strong> A visual representation of the campus map where users can see 
+                                    locations, paths, and the calculated route highlighted. The canvas supports zooming, panning, and 
+                                    interactive selection of locations.</li>
+                                    <li><strong>ControlPanel:</strong> User controls for selecting start and end locations, triggering 
+                                    path calculations, and adjusting display options. The panel provides dropdown menus, search 
+                                    functionality, and clear visual feedback.</li>
+                                    <li><strong>ResultsPanel:</strong> Displays the calculated route with step-by-step directions, 
+                                    total distance, estimated walking time, and a list of landmarks along the path. The panel updates 
+                                    dynamically as users select different routes.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Usability & Future Expansion:</strong> The modular design makes it easy to add new features 
+                                such as multiple route options, accessibility preferences, real-time updates, or integration with 
+                                campus bus schedules. The separation of concerns allows for independent development and testing of 
+                                each component.
+                            </li>
+                            <li>
+                                <strong>Performance Optimization:</strong> Optimized the graph representation and algorithm 
+                                implementation to ensure fast pathfinding. Used efficient data structures and caching strategies to 
+                                minimize computation time, resulting in consistently fast response times regardless of the selected 
+                                locations.
+                            </li>
+                        </ul>
+
+                        <h4>Technical Challenges</h4>
+                        <p>
+                            Creating an accurate graph representation of the campus required careful mapping of physical locations and 
+                            pathways. The UI needed to be intuitive while displaying complex graph data in a user-friendly way. 
+                            Balancing visual clarity with information density was a key design challenge.
+                        </p>
+
+                        <h4>Technologies Used</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">JavaFX</span>
+                            <span class="tech-tag">Git</span>
+                            <span class="tech-tag">Graph Algorithms</span>
+                            <span class="tech-tag">Data Structures</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            
+            <div class="education-item">
+                <div class="education-header">
+                    <div>
+                        <h3 class="education-degree">Bachelor of Science in Computer Science and Data Science</h3>
+                        <p class="education-institution">University of Wisconsin - Madison</p>
+                    </div>
+                    <span class="education-date">August 2024 – May 2027</span>
+                </div>
+                <p class="education-location">Madison, WI</p>
+                
+                <div class="education-details">
+                    <p>
+                        Currently pursuing a dual degree in Computer Science and Data Science at the University of Wisconsin-Madison, 
+                        one of the top public research universities in the United States. This program provides a strong foundation 
+                        in both theoretical computer science and practical data science applications, preparing me for careers in 
+                        software engineering, machine learning, and data analysis.
+                    </p>
+                    <p>
+                        The curriculum covers a wide range of topics including algorithms and data structures, software engineering, 
+                        machine learning, statistics, database systems, and computer vision. I'm particularly interested in the 
+                        intersection of AI, computer vision, and full-stack development, which I've been able to explore through 
+                        both coursework and personal projects.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section id="leadership" class="leadership">
+        <div class="container">
+            <h2 class="section-title">Leadership & Involvement</h2>
+            
+            <div class="leadership-grid">
+                <div class="leadership-card">
+                    <h3 class="leadership-title">President</h3>
+                    <p class="leadership-org">Wisconsin Squash Club at UW Madison</p>
+                    
+                    <div class="leadership-details">
+                        <p>
+                            As President of the Wisconsin Squash Club, I've led the organization through significant growth and 
+                            development. Under my leadership, the club has expanded from 50 to 75+ active members, creating a 
+                            vibrant community for squash enthusiasts at UW Madison.
+                        </p>
+                        <h4>Key Responsibilities & Achievements:</h4>
+                        <ul>
+                            <li>
+                                <strong>Organizational Growth:</strong> Developed and executed strategies to attract new members, 
+                                including outreach events, beginner-friendly sessions, and partnerships with other campus organizations. 
+                                The growth from 50 to 75+ members represents a 50% increase in active participation.
+                            </li>
+                            <li>
+                                <strong>Practice Management:</strong> Organized and coordinated regular practice sessions, ensuring 
+                                facilities are booked, equipment is available, and members have opportunities to improve their skills. 
+                                Created structured practice formats that accommodate players of all skill levels.
+                            </li>
+                            <li>
+                                <strong>Intercollegiate Competitions:</strong> Managed the club's participation in intercollegiate 
+                                squash competitions, coordinating with other universities, organizing travel logistics, and ensuring 
+                                teams are prepared and registered. This includes managing rosters, scheduling matches, and handling 
+                                competition-related communications.
+                            </li>
+                            <li>
+                                <strong>Travel Logistics:</strong> Planned and executed travel arrangements for away matches and 
+                                tournaments, including transportation, accommodations, and meal planning. Ensured all travel complies 
+                                with university policies and stays within budget constraints.
+                            </li>
+                            <li>
+                                <strong>Executive Board Operations:</strong> Led a team of executive board members, delegating 
+                                responsibilities, facilitating meetings, and ensuring effective communication across the organization. 
+                                Established clear roles and responsibilities to maximize efficiency and member engagement.
+                            </li>
+                            <li>
+                                <strong>Financial Management:</strong> Managed allocation of club funds across equipment purchases, 
+                                tournament fees, travel expenses, and facility rentals. Created and maintained budgets, tracked 
+                                expenditures, and ensured full compliance with university financial policies. This includes preparing 
+                                financial reports, submitting reimbursement requests, and working with university accounting systems.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="leadership-card">
+                    <h3 class="leadership-title">Member</h3>
+                    <p class="leadership-org">Sports Club Administrative Board at UW Madison</p>
+                    
+                    <div class="leadership-details">
+                        <p>
+                            Elected to serve on the university-wide Sports Club Administrative Board, which oversees governance, 
+                            compliance, and funding for all registered sport clubs at UW Madison. This position requires careful 
+                            analysis, fair judgment, and a commitment to supporting student organizations across the university.
+                        </p>
+                        <h4>Key Responsibilities & Achievements:</h4>
+                        <ul>
+                            <li>
+                                <strong>Governance & Compliance:</strong> Participated in board meetings to review and establish 
+                                policies governing all sport clubs. Ensured clubs comply with university regulations, safety standards, 
+                                and organizational requirements. This includes reviewing club constitutions, membership policies, and 
+                                operational procedures.
+                            </li>
+                            <li>
+                                <strong>Budget Review & Allocation:</strong> Reviewed budget proposals from sport clubs across the 
+                                university, evaluating funding requests for equipment, travel, facilities, and events. Made informed 
+                                decisions about resource allocation to ensure equitable distribution while maximizing the impact of 
+                                available funds.
+                            </li>
+                            <li>
+                                <strong>Conflict Resolution:</strong> Addressed operational and conduct issues within sport clubs, 
+                                working to find fair and constructive solutions. This involved investigating complaints, facilitating 
+                                discussions between parties, and implementing corrective measures when necessary.
+                            </li>
+                            <li>
+                                <strong>Resource Distribution:</strong> Ensured equitable resource distribution across all sport clubs, 
+                                considering factors such as club size, activity level, and demonstrated need. Worked to balance the 
+                                interests of established clubs with opportunities for newer or smaller organizations.
+                            </li>
+                            <li>
+                                <strong>Organizational Stability:</strong> Monitored the health and stability of sport clubs, 
+                                identifying potential issues early and working with club leadership to address challenges. Helped 
+                                ensure the long-term sustainability of the sport club program at UW Madison.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="leadership-card">
+                    <h3 class="leadership-title">STEM Education Program Lead</h3>
+                    <p class="leadership-org">Educational Technology Programs</p>
+                    
+                    <div class="leadership-details">
+                        <p>
+                            Led educational technology programs focused on providing STEM education to underprivileged students. 
+                            This role combined my technical expertise with a passion for education and community service, creating 
+                            opportunities for students who might not otherwise have access to high-quality STEM learning experiences.
+                        </p>
+                        <h4>Key Responsibilities & Achievements:</h4>
+                        <ul>
+                            <li>
+                                <strong>Program Management:</strong> Managed comprehensive educational technology programs that reached 
+                                200+ underprivileged students. Developed program structures, timelines, and success metrics to ensure 
+                                effective delivery of educational content and meaningful learning outcomes.
+                            </li>
+                            <li>
+                                <strong>Curriculum Development:</strong> Designed and developed curriculum for hands-on STEM learning 
+                                experiences that engage students and make complex concepts accessible. Created lesson plans, activities, 
+                                and projects that combine theoretical knowledge with practical application, using technology as a tool 
+                                for learning and exploration.
+                            </li>
+                            <li>
+                                <strong>Team Coordination:</strong> Coordinated a team of 100+ members working on technical education 
+                                initiatives. This involved recruiting volunteers, assigning roles, providing training, and ensuring 
+                                effective communication across the team. Managed schedules, resources, and logistics to support 
+                                program delivery.
+                            </li>
+                            <li>
+                                <strong>Impact & Outreach:</strong> Worked to expand program reach and impact, identifying new 
+                                communities and schools that could benefit from STEM education support. Built partnerships with 
+                                schools, community centers, and other organizations to maximize program effectiveness.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            
+            <div class="skills-grid">
+                <div class="skills-category">
+                    <h3>Programming Languages</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">C</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Swift</span>
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">R</span>
+                        <span class="tech-tag">HTML/CSS</span>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Frameworks & Libraries</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">NumPy</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">MediaPipe</span>
+                        <span class="tech-tag">FAISS</span>
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">JavaFX</span>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Developer Tools & Platforms</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">GCP</span>
+                        <span class="tech-tag">GitHub</span>
+                        <span class="tech-tag">GitLab</span>
+                        <span class="tech-tag">Linux/Unix</span>
+                        <span class="tech-tag">VS Code</span>
+                        <span class="tech-tag">IntelliJ</span>
+                        <span class="tech-tag">PyCharm</span>
+                        <span class="tech-tag">Xcode</span>
+                        <span class="tech-tag">Jupyter</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-description">
+                I'm always open to discussing new opportunities, interesting projects, or just connecting with fellow developers 
+                and tech enthusiasts. Feel free to reach out!
+            </p>
+            
+            <div class="contact-info">
+                <a href="mailto:ayush10.kiran@gmail.com" class="contact-item">
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">ayush10.kiran@gmail.com</span>
+                </a>
+                <a href="tel:414-949-2227" class="contact-item">
+                    <span class="contact-label">Phone</span>
+                    <span class="contact-value">414-949-2227</span>
+                </a>
+                <a href="https://github.com/ayush10kiran" target="_blank" class="contact-item">
+                    <span class="contact-label">GitHub</span>
+                    <span class="contact-value">github.com/ayush10kiran</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Ayush Kiran. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
